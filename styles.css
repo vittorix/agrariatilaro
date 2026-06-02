@@ -133,7 +133,15 @@ h2 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.2rem, 5v
 .contact-card { display:grid; grid-template-columns: 1fr 380px; gap: 34px; align-items:center; padding: clamp(26px, 5vw, 54px); background: rgba(255,250,240,.88); border: 1px solid rgba(255,255,255,.7); box-shadow: var(--shadow); border-radius: 36px; backdrop-filter: blur(12px); }
 .contact-card p { color: var(--muted); max-width: 680px; }
 .contact-actions { display:flex; flex-direction:column; gap: 12px; }
-.contact-link { display:block; padding: 15px 16px; border-radius: 16px; background: #fffaf0; border:1px solid rgba(71,53,31,.14); text-decoration:none; font-weight:900; }
+.contact-link { display:inline-flex; align-items:center; gap: 12px; padding: 15px 16px; border-radius: 16px; background: #fffaf0; border:1px solid rgba(71,53,31,.14); text-decoration:none; font-weight:900; color: var(--ink); }
+.contact-link:hover { background: #f5eedf; }
+.contact-icon { display:inline-flex; align-items:center; justify-content:center; width: 36px; height: 36px; min-width: 36px; border-radius: 14px; background: rgba(108,138,82,.12); }
+.contact-icon img { display:block; width: 20px; height: 20px; object-fit: contain; }
+.contact-icon svg { width: 20px; height: 20px; }
+.contact-icon-gmail { background: rgba(237,73,86,.12); }
+.contact-icon-hotmail { background: rgba(0,120,212,.12); }
+.contact-icon-phone { background: rgba(53,93,58,.12); }
+.contact-icon-linkedin { background: rgba(50,103,171,.12); }
 .contact-note { color: var(--muted); font-size:.94rem; padding: 5px 2px 12px; }
 .button.wide { width:100%; }
 
